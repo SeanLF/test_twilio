@@ -43,3 +43,6 @@ group :development, :test do
   gem 'spring'
 end
 
+# for receiving sms
+gem 'twilio-ruby'
+

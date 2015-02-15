@@ -1,0 +1,21 @@
+<h1>Twilios</h1>
+
+<h4>Total messages received: <%= @count %></h4>
+<table>
+  <th>
+    <tr>
+      <td>Phone #</td>
+      <td>Message</td>
+    </tr>
+  </th>
+  <tbody><% @twilios.each do |twilio| %>
+    <tr>
+      <td>
+        <%= twilio.number %>
+      </td>
+      <td>
+        <%= twilio.body %>
+      </td>
+    </tr><% end %>
+  </tbody>
+</table>
