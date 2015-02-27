@@ -1,7 +1,8 @@
 class TwilioController < ApplicationController
 
   def index
-    @twilios = Message.all
+    set_title
+    @twilios = Message.all.reverse
     @count = @twilios.count
   end
 
@@ -22,5 +23,16 @@ class TwilioController < ApplicationController
         raise "Can't save!"
       end
     end
+  end
+
+  def reset
+    Message.delete_all
+    redirect_to action: "index"
+    return
+  end
+
+ private
+ def set_title
+  @title_description = "Index"
   end
 end

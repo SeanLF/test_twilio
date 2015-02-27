@@ -37,8 +37,16 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
+    autoprefixer-rails (5.1.7)
+      execjs
+      json
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-generators (3.3.1)
+      railties (>= 3.1.0)
+    bootstrap-sass (3.3.3)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.2.19)
     builder (3.2.2)
     byebug (3.5.1)
       columnize (~> 0.8)
@@ -54,8 +62,11 @@ GEM
     columnize (0.9.0)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
+    devise-bootstrap-views (0.0.4)
     erubis (2.7.0)
     execjs (2.3.0)
+    font-awesome-sass (4.3.1)
+      sass (~> 3.2)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
     hike (1.2.3)
@@ -155,14 +166,19 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-generators
+  bootstrap-sass (>= 3.3.3)
   byebug
   coffee-rails (~> 4.1.0)
+  devise-bootstrap-views
+  font-awesome-sass
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
+  sprockets-rails
   sqlite3
   turbolinks
   twilio-ruby
